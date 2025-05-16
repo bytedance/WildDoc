@@ -1,4 +1,5 @@
-#Copyright (2025) Bytedance Ltd. 
+# Copyright (c) 2024 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: GPL-3.0-only
 import multiprocessing as mp 
 from typing import Optional
 import unicodedata
