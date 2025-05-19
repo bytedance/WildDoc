@@ -2,7 +2,7 @@
 WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Understanding in the Wild?
 
 <div style="text-align: center;">
-    <img src="./assets/Overview.png" width="80%" height="80%">
+    <img src="./assets/Overview.png" width="70%" height="70%">
 </div>
 > The rapid advancements in Multimodal Large Language Models (MLLMs) have significantly enhanced capabilities in Document Understanding. However, prevailing benchmarks like DocVQA and ChartQA predominantly comprise scanned or digital documents, inadequately reflecting the intricate challenges posed by diverse real-world scenarios such as variable illumination and physical distortions. This paper introduces WildDoc, the inaugural benchmark designed specifically for assessing document understanding in natural environments. WildDoc incorporates a diverse set of manually captured document images reflecting real-world conditions and leverages document sources from established benchmarks to facilitate comprehensive comparisons with digital or scanned documents. Further, to rigorously evaluate model robustness, each document is captured four times under different conditions. Evaluations of state-of-the-art MLLMs on WildDoc expose substantial performance declines and underscore the models’ inadequate robustness compared to traditional benchmarks, highlighting the unique challenges posed by real-world document understanding.
 
@@ -14,7 +14,7 @@ WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Underst
 * **`2025.05.16`** 🌟 Doubao-1.5-thinking-VL achieves the best performance overall, Qwen2.5-VL achieves the best performance among open-source MLLMs, congratulations!
 * **`2025.05.16`** 🌟 We are excited to launch WildDoc, the first benchmark designed specifically for assessing document understanding in the wild.
 
-## 👀 Data
+## 👀 Dataset
 |[Huggingface Dataset](https://huggingface.co/datasets/ByteDance/WildDoc)|[VLMEval Dataset](https://github.com/open-compass/VLMEvalKit/tree/main/vlmeval/dataset)
 
 ## 📋 Dataset Usage
@@ -24,6 +24,11 @@ from datasets import load_dataset
 dataset = load_dataset("ByteDance/WildDoc")
 ```
 
+## Data Examples
+
+<div style="text-align: center;">
+    <img src="./assets/MoreExamples.jpg" width="80%" height="80%">
+</div>
 
 ## 🔮 Evaluation
 We highly recommend using the [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) to evaluate your model.
