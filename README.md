@@ -7,7 +7,7 @@ WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Underst
 > The rapid advancements in Multimodal Large Language Models (MLLMs) have significantly enhanced capabilities in Document Understanding. However, prevailing benchmarks like DocVQA and ChartQA predominantly comprise scanned or digital documents, inadequately reflecting the intricate challenges posed by diverse real-world scenarios such as variable illumination and physical distortions. This paper introduces WildDoc, the inaugural benchmark designed specifically for assessing document understanding in natural environments. WildDoc incorporates a diverse set of manually captured document images reflecting real-world conditions and leverages document sources from established benchmarks to facilitate comprehensive comparisons with digital or scanned documents. Further, to rigorously evaluate model robustness, each document is captured four times under different conditions. Evaluations of state-of-the-art MLLMs on WildDoc expose substantial performance declines and underscore the models’ inadequate robustness compared to traditional benchmarks, highlighting the unique challenges posed by real-world document understanding.
 
 ## 🔗 Links
-|**[🍎 Project Page](https://bytedance.github.io/WildDoc)** | **[📖 Paper]()** |**[📊 Dataset](https://huggingface.co/datasets/ByteDance/WildDoc)** | **[🏆 Leaderboard](https://github.com/bytedance/WildDoc?tab=readme-ov-file#-leaderboard)** 
+|**[🍎 Project Page](https://bytedance.github.io/WildDoc)** | **[📖 Paper](https://arxiv.org/abs/2505.11015)** |**[📊 Dataset](https://huggingface.co/datasets/ByteDance/WildDoc)** | **[🏆 Leaderboard](https://github.com/bytedance/WildDoc?tab=readme-ov-file#-leaderboard)** 
 
 ## 🔥 News
 * **`2025.05.16`** 🌟 Doubao-1.5-thinking-VL achieves the best performance overall, congratulations!
@@ -25,15 +25,15 @@ dataset = load_dataset("ByteDance/WildDoc")
 
 
 ## 🔮 Evaluation
-We highly recommand using the [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) to evaluate your model.
+We highly recommend using the [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) to evaluate your model.
 
-Otherwise, if you evaluate your model by yourself, after getting the fianl results, please use the following command to calculate the metrics:
+Otherwise, if you evaluate your model by yourself, after getting the final results, please use the following command to calculate the metrics:
 ```python
 python3 calculate_metric.py --eval_file "Your output file"
 ```
-The output excel of Qwen2.5-VL-72B-Instruct is provided in results folder. 
+The output Excel of Qwen2.5-VL-72B-Instruct is provided in the results folder. 
 
-If you want to add your results to the WildDoc leaderboard, feel free to email us directly at wanganlan@bytedance.com or tangjingqun@bytedance.com.
+If you want to add your results to the WildDoc leaderboard, email us directly at wanganlan@bytedance.com or tangjingqun@bytedance.com.
 
 ## 🏆 LeaderBoard
 <img src="./assets/LeaderBoard.png" width="100%" height="95%">
@@ -42,7 +42,15 @@ If you want to add your results to the WildDoc leaderboard, feel free to email u
 ## Citation
 If you wish to refer to the baseline results published here, please use the following BibTeX entries:
 ```BibTeX
-
+@misc{wang2025wilddoc,
+      title={WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Understanding in the Wild?}, 
+      author={An-Lan Wang and Jingqun Tang and Liao Lei and Hao Feng and Qi Liu and Xiang Fei and Jinghui Lu and Han Wang and Weiwei Liu and Hao Liu and Yuliang Liu and Xiang Bai and Can Huang},
+      year={2025},
+      eprint={2505.11015},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.11015}, 
+}
 ```
 
 Additionally, we encourage you to cite the following papers:
