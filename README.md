@@ -10,7 +10,7 @@ WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Underst
 |**[🍎 Project Page](https://bytedance.github.io/WildDoc)** | **[📖 Paper](https://arxiv.org/abs/2505.11015)** |**[📊 Dataset](https://huggingface.co/datasets/ByteDance/WildDoc)** | **[🏆 Leaderboard](https://github.com/bytedance/WildDoc?tab=readme-ov-file#-leaderboard)** 
 
 ## 🔥 News
-* **`2025.05.19`** 🌟 MTVQA is now supported in [VLMEval](https://github.com/open-compass/VLMEvalKit)!
+* **`2025.05.19`** 🌟 WildDoc is now supported in [VLMEval](https://github.com/open-compass/VLMEvalKit)!
 * **`2025.05.16`** 🌟 Doubao-1.5-thinking-VL achieves the best performance overall, Qwen2.5-VL achieves the best performance among open-source MLLMs, congratulations!
 * **`2025.05.16`** 🌟 We are excited to launch WildDoc, the first benchmark designed specifically for assessing document understanding in the wild.
 
